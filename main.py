@@ -133,10 +133,10 @@ def getAuth(partner, proxy):
         "partner_agent": partner
     }
     proxies = {"http": proxy, "https": proxy}
-    if (partner == "changhong"):
-        param["unique_id"] = generate_SN("G92DVB0CHOD0213", 4)
-    elif (partner == "akari"):
-        param["unique_id"] = generate_SN("F230101870A0", 4)
+    if (partner == "AQUA"):
+        param["unique_id"] = generate_SN("LE50AQT6700UG", 4)
+    elif (partner == "AQUA"):
+        param["unique_id"] = generate_SN("LE43AQT8500MF", 4)
     try:
         response = requests.post(url, headers=headers,
                                  data=param, proxies=proxies, timeout=5)
